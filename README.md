@@ -1,6 +1,8 @@
 # IPSuM
 
-* In This Project I created a full scenario include JavaScript for the 4 designs in figma:
+In master branch:
+
+* I created a full scenario include JavaScript for the 4 designs in figma:
 
   You Can find it in html file called "Full Scenario.html"
   
