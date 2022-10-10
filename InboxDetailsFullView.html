@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="Scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <title>IPSUM</title>
+
+</head>
+
+<body>
+
+
+  <!-- Start OF Main Navbar-->
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler btn-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex navbar--Logo">
+        <img class="navbar-brand " src="Assets/logo-1.png" alt="">
+        <a class="navbar-brand navbar--Title" href="#">MAIL IPSUM</a>
+      </div>
+
+      <div class="collapse navbar-collapse ">
+
+        <form class="d-flex form-line navbar--Search" role="search">
+          <div class="Search--Container" style="position: relative;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="form-control " type="search" placeholder="Search here..." aria-label="Search">
+          </div>
+
+
+        </form>
+        <ul class="navbar-nav navbar--Header">
+          <li class="nav-item me-2">
+
+            <img class="nav-link " src="Assets/inbox.png" alt="">
+          </li>
+          <li class="nav-item me-2">
+
+            <img class="nav-link " src="Assets/settings.png" alt="">
+
+          </li>
+          <li class="nav-item me-3">
+
+            <img class="nav-link" src="Assets/help.png" alt="">
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">John Alex</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <img class="nav-link" src="Assets/menu.png" alt="">
+    </div>
+  </nav>
+  <!-- End Of Main Navbar-->
+
+
+
+
+  <!-- Start Of SideBar -->
+
+  <div class="d-flex">
+
+    <div class="wui-side-menu open pinned nav-container hidden hideNav" id="SideNavbar" data-wui-theme="dark">
+      <div class="wui-side-menu-header ComposeMail">
+        <div class="SideNavbar">
+          <a href="#" class="wui-side-menu-item text-center">
+            <img src="Assets/Group.png" alt="">
+            <span class="ComposeMail">Compose Mail</span>
+          </a>
+        </div>
+        </a>
+      </div>
+      <ul class="wui-side-menu-items">
+        <li>
+          <div class="d-flex SideMenu">
+            <div>
+              <a href="#" class="wui-side-menu-item active">
+                <i class="fa-solid fa-inbox fa fw box-ico"></i>
+                <span class="box-title">Inbox</span>
+
+              </a>
+            </div>
+            <div>
+              <span class="badge badge-light">2</span>
+            </div>
+
+          </div>
+
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item ">
+            <img src="Assets/starred 1.png" class="box-ico" alt="">
+            <span class="box-title">Starred</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <img src="Assets/layer-2.png" class="box-ico" alt="">
+            <span class="box-title">Sent</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <img src="Assets/rectangle-30-copy-2 1.png" class="box-ico" alt="">
+            <span class="box-title">Categories</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <i class="box-ico fa fa-search fa-fw Hidden--Icon"></i>
+            <span class="box-title">Social</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <i class="box-ico fa fa-cog fa-fw Hidden--Icon"></i>
+            <span class="box-title">Updates</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <i class="box-ico fa fa-cog fa-fw Hidden--Icon"></i>
+            <span class="box-title">Forums</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <i class="box-ico fa fa-cog fa-fw Hidden--Icon"></i>
+            <span class="box-title">Promotions</span>
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a href="#" class="wui-side-menu-item">
+            <img src="Assets/delete-1.png" class="box-ico" alt="">
+            <span class="box-title">Trash</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- End OF SideBar-->
+
+
+
+
+
+
+    <!--Start OF Main Content-->
+
+    <div class="Main--Box container-fluid">
+
+
+
+      <!-- Start Of Notification Bar -->
+
+      <div class="row Inside--box d-flex NotificationBar alert alert-dismissible fade show " role="alert"
+        id="NotificationBar" style="margin:20px">
+        <div class="col-lg-8 col-md-8">
+          <p class="Inside--Box--Title">Welcome Back John,<span class="Inside--box--subTitle"> You have...</span></p>
+          <p class="Inside--Box--Number">2 <span class="Inside--box--subTitle">New Mails</span></p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <img class="NotificationImage" src="Assets/Deliverd-.Background.png" alt="">
+        </div>
+
+      </div>
+
+      <!-- End Of Notification Bar -->
+
+
+
+      <div class="inbox-body">
+        <div class="mail-option">
+          <div class="chk-all">
+            <input type="checkbox">
+
+          </div>
+          <div id="ActionsMail" style="display: none;">
+            <div class="btn-group">
+              <img src="Assets/forward-right-arrow-button@2x 1.png" alt="">
+
+            </div>
+            <div class="btn-group" style="margin-top: 10px;">
+              <p>Forward</p>
+
+
+            </div>
+            <div class="btn-group">
+              <img src="Assets/reply 2.png" alt="">
+            </div>
+            <div class="btn-group" style="margin-top: 10px;">
+              <p>Reply</p>
+
+            </div>
+          </div>
+          <div class="btn-group">
+            <img src="Assets/ellipsis 2.png" alt="">
+          </div>
+
+
+          <ul class="unstyled inbox-pagination">
+            <li><span>Sort by</span>
+
+            </li>
+            <li>
+              <img class=" np-btn SortedBy" src="Assets/shape-1-copy-5 1.png" alt="">
+            </li>
+            <li>
+              <img class=" np-btn Vertical--View" src="Assets/vertical view 1.png" alt="">
+            </li>
+            <li>
+
+              <img class=" np-btn Horizontal--View" src="Assets/horizontal view.png" alt="">
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="d-flex ">
+          <div class="InboxMessage" style="width: 40%!important;">
+
+            <!-- Start Of Inbox Details View -->
+            <ul id="CardsList">
+              <li style="margin-bottom:5px">
+                <div class="card" style="border:unset!important;">
+                  <div class="card-body">
+                    <div style="display:flex ; justify-content: space-between;">
+                      <div>
+                        <p class="HigherText"> <input id="CheckedCheck" onclick="checkMe(this.checked)" type="checkbox"
+                            class="mail-checkbox checkboxField me-2">Marc John </p>
+                      </div>
+                      <div>
+                        <h6 class="card-title ">23-1-2021</h6>
+                      </div>
+                    </div>
+                    <div>
+
+                      <p class="card-title" style="padding-left: 30px;">New Envelope</p>
+                    </div>
+
+                    <div style="padding-left: 30px; display: flex; justify-content: space-between;">
+                      <div>
+                        <a href="#"> <img width="60%" src="Assets/4 1.png" alt=""></a>
+                      </div>
+                      <div style="position: relative;">
+                        <i style="position: absolute;" class="StarBox inbox-small-cells fa fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li style="margin-bottom:5px">
+                <div class="card" style="border:unset!important;">
+                  <div class="card-body">
+                    <div style="display:flex ; justify-content: space-between;">
+                      <div>
+                        <p class="HigherText"> <input onclick="checkMe(this.checked)" type="checkbox"
+                            class="mail-checkbox checkboxField me-2">Marc John</p>
+                      </div>
+                      <div>
+                        <h6 class="card-title ">23-1-2021</h6>
+                      </div>
+                    </div>
+                    <div>
+
+                      <p class="card-title" style="padding-left: 30px;">New Envelope</p>
+                    </div>
+
+                    <div style="padding-left: 30px; display: flex; justify-content: space-between;">
+                      <div>
+                        <a href="#"> <img width="60%" src="Assets/4 1.png" alt=""></a>
+                      </div>
+                      <div style="position: relative;">
+                        <i style="position: absolute;" class="StarBox inbox-small-cells fa fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li style="margin-bottom:5px">
+                <div class="card" style="border:unset!important;">
+                  <div class="card-body">
+                    <div style="display:flex ; justify-content: space-between;">
+                      <div>
+                        <p class="HigherText"> <input onclick="checkMe(this.checked)" type="checkbox"
+                            class="mail-checkbox checkboxField me-2 ">Bank</p>
+                      </div>
+                      <div>
+                        <h6 class="card-title ">23-1-2021</h6>
+                      </div>
+                    </div>
+                    <div>
+
+                      <p class="card-title" style="padding-left: 30px;">New Envelope</p>
+                    </div>
+
+                    <div style="padding-left: 30px; display: flex; justify-content: space-between;">
+                      <div>
+                        <a href="#"> <img width="60%" src="Assets/4 1.png" alt=""></a>
+                      </div>
+                      <div style="position: relative;">
+                        <i style="position: absolute;" class="StarBox inbox-small-cells fa fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li style="margin-bottom:5px">
+                <div class="card" style="border:unset!important;">
+                  <div class="card-body">
+                    <div style="display:flex ; justify-content: space-between;">
+                      <div>
+                        <p class="HigherText"> <input onclick="checkMe(this.checked)" type="checkbox"
+                            class="mail-checkbox checkboxField me-2">Emy Wilson	</p>
+                      </div>
+                      <div>
+                        <h6 class="card-title ">23-1-2021</h6>
+                      </div>
+                    </div>
+                    <div>
+
+                      <p class="HigherText" style="padding-left: 30px;">New Envelope</p>
+                    </div>
+
+                    <div style="padding-left: 30px; display: flex; justify-content: space-between;">
+                      <div>
+                        <a href="#"> <img width="60%" src="Assets/4 1.png" alt=""></a>
+                      </div>
+                      <div style="position: relative;">
+                        <i style="position: absolute;" class="StarBox inbox-small-cells fa fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li style="margin-bottom:5px">
+                <div class="card" >
+                  <div class="card-body">
+                    <div class="CardDetails"  >
+                      <div>
+                        <p class="card-title"> <input onclick="checkMe(this.checked)" type="checkbox"
+                            class="mail-checkbox checkboxField me-2">Davild Walker</p>
+                      </div>
+                      <div>
+                        <h6 class="card-title ">23-1-2021</h6>
+                      </div>
+                    </div>
+                    <div>
+
+                      <p class="card-title" style="padding-left: 30px;">New Envelope</p>
+                    </div>
+
+                    <div class="StarImage">
+                      <div>
+                        <a href="#"> <img width="60%" src="Assets/4 1.png" alt=""></a>
+                      </div>
+                      <div style="position: relative;">
+                        <i style="position: absolute;" class="StarBox inbox-small-cells fa fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- End Of Inbox Details View -->
+
+
+          </div>
+
+
+
+          <!-- Start Of Mail Details -->
+
+
+          <div id="divcheck" style="width: 70%!important;">
+            <div class="d-flex InboxDetails">
+              <div>
+                <p class="HigherText"> New Envelope</p>
+              </div>
+              <div>
+                <ul class="unstyled inbox-pagination">
+                  <li>
+                    <img class=" np-btn SortedBy" src="Assets/print.png" alt="">
+                  </li>
+                  <li>
+                    <img class=" np-btn Vertical--View" src="Assets/download.png" alt="">
+                  </li>
+                  <li>
+
+                    <img class=" np-btn Horizontal--View" src="Assets/close.png" alt="">
+                </ul>
+              </div>
+            </div>
+            <div class="MailBody">
+              <div class="d-flex MailDetail">
+                <div>
+                  <p class="LowerTextTitle"> Marc.john@gmail.com</p>
+                  <p class="LowerTextSubTitle">23-1-2021 <span> 19:05 AM</span></p>
+
+                </div>
+                <div>
+                  <ul class="unstyled inbox-pagination">
+
+                    <li>
+                      <img class=" np-btn SortedBy" src="Assets/forward-right-arrow-button@2x 1.png" alt="">
+                    </li>
+                    <li>
+                      <img class=" np-btn Vertical--View" src="Assets/reply 2.png" alt="">
+                    </li>
+                    <li>
+
+                      <img class=" np-btn Horizontal--View" src="Assets/ellipsis 3.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex MailAttachment">
+                <img style="margin-top: 20px; width: 70%" src="Assets/4 1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- End Of Mail Details -->
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!-- End OF Main Content -->
+
+    <a target="_blank" class="float" style="display: none;">
+      <img src="assets/Group (1).png" alt="">
+    </a>
+  </div>
+
+
+
+  <script>
+    $(window).load(function () {
+      $(".btn-nav").on("click tap", function () {
+        $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+        $(this).toggleClass("animated");
+      });
+    });
+  </script>
+</body>
+
+</html>
